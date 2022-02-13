@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".ui.FileManagementActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="File Management"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/file_manage_recyclerview"
+            tools:listitem="@layout/item_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:id="@+id/file_manage_btn_add"
+            android:src="@drawable/ic_plus_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="58dp"
+            android:layout_height="58dp"/>
+        <TextView
+            android:id="@+id/txt_log_window"
+            android:background="@drawable/bg_main_btn"
+            android:layout_margin="8dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:layout_toEndOf="@id/file_manage_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

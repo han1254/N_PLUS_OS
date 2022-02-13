@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="8dp"
+    tools:context=".ui.FileOperateActivity">
+
+    <LinearLayout
+        android:id="@+id/operate_btn_file_manage"
+        android:background="@drawable/bg_main_btn"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:src="@drawable/ic_file_icon"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="File Management"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operate_btn_memory_analysis"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_main_btn"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:src="@drawable/ic_memory_icon"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="Memory Analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operate_btn_disk_analysis"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_main_btn"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:src="@drawable/ic_disk_icon"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="Disk Analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operate_btn_directory_info"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_main_btn"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:src="@drawable/ic_directory_icon"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="Directory Information"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
